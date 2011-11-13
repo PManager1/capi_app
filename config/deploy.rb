@@ -1,3 +1,10 @@
+require 'bundler/capistrano'
+#using  RVM!
+$:.unshift("#{ENV["HOME"]}/.rvm/lib")
+require "rvm/capistrano"
+set :rvm_type, :user
+
+
 set :application, "capi_app"
 set :deploy_to, "/home/jp/sites/capi_app"
 
