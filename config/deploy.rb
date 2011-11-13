@@ -7,7 +7,7 @@ role :db,  "192.168.2.129", :primary => true # This is where Rails migrations wi
 
 
 default_run_options[:pty] =  true
-set :repository,  "git://git@github.com:jaipratik/capi_app.git"
+set :repository,  "git@github.com:jaipratik/capi_app.git"
 set :scm, :git
 set :branch, "master"
 
