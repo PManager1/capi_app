@@ -21,6 +21,6 @@ test:
 production:
   adapter: mysql
   database: mysql
-  username: jp
+  username: root
   password: pass
   host: localhost
