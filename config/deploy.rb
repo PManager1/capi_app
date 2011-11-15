@@ -6,11 +6,11 @@ set :rvm_type, :user
 
 
 set :application, "capi_app"
-set :deploy_to, "/home/jp/sites/capi_app"
+set :deploy_to, "/home/ubuntu/webapps/capi_app"
 
-role :web, "192.168.2.129"                          # Your HTTP server, Apache/etc
-role :app, "192.168.2.129"                          # This may be the same as your `Web` server
-role :db,  "192.168.2.129", :primary => true # This is where Rails migrations will run
+role :web, "www.passionate4.net"                          # Your HTTP server, Apache/etc
+role :app, "www.passionate4.net"                          # This may be the same as your `Web` server
+role :db,  "www.passionate4.net", :primary => true # This is where Rails migrations will run
 
 
 default_run_options[:pty] =  true
@@ -19,8 +19,8 @@ set :scm, :git
 set :branch, "master"
 
 
-set :user, "jp"            #if error use whats shown in podcast
-set :admin_runner, "jp"
+set :user, "ubuntu"            #if error use whats shown in podcast
+set :admin_runner, "ubuntu"
 
 #set :use_sudo, false   #if error delete this
 
