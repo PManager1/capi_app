@@ -6,11 +6,11 @@ set :rvm_type, :user
 
 
 set :application, "capi_app"
-set :deploy_to, "/home/ubuntu/webapps/capi_app"
+set :deploy_to, "/var/www/apps/#{application}"
 
-role :web, "www.passionate4.net"                          # Your HTTP server, Apache/etc
-role :app, "www.passionate4.net"                          # This may be the same as your `Web` server
-role :db,  "www.passionate4.net", :primary => true # This is where Rails migrations will run
+role :web, "passionate4.net"                          # Your HTTP server, Apache/etc
+role :app, "passionate4.net"                          # This may be the same as your `Web` server
+role :db,  "passionate4.net", :primary => true # This is where Rails migrations will run
 
 
 default_run_options[:pty] =  true
