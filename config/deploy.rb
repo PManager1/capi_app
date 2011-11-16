@@ -25,19 +25,6 @@ set :admin_runner, "ubuntu"
 
 #set :use_sudo, false   #if error delete this
 
-server_endpoint: ec2-50-18-154-22.us-west-1.compute.amazonaws.com
-  
-  # REQUIRED The amazon keys and account ID (digits only, no dashes) used to access the AWS API
-  #
-  access_key: AKIAIHRM3ONTGJE4WP6Q
-  secret_access_key: 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
-  account: 893274982995
-  
-  
-
-key_name: jpkey-keypair
-key_file: "#{Dir[(File.expand_path('~') rescue '/root') + '/.ec2/*' + cloud_providers.aws.key_name].first}"
-
 
 
 # if you're still using the script/reaper helper you will need
