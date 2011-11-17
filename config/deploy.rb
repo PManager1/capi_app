@@ -6,7 +6,7 @@ set :rvm_type, :user
 
 
 set :application, "capi_app"
-set :deploy_to, "/var/www/#{application}"
+set :deploy_to, "/var/www/apps/#{application}"
 
 role :web, "50.18.155.154"                          # Your HTTP server, Apache/etc
 role :app, "50.18.155.154"                          # This may be the same as your `Web` server
