@@ -6,11 +6,11 @@ set :rvm_type, :user
 
 
 set :application, "capi_app"
-set :deploy_to, "/var/www/apps/#{application}"
+set :deploy_to, "/var/www/#{application}"
 
-role :web, "50.18.155.154"                          # Your HTTP server, Apache/etc
-role :app, "50.18.155.154"                          # This may be the same as your `Web` server
-role :db,  "50.18.155.154", :primary => true # This is where Rails migrations will run
+role :web, "192.168.2.129"                          # Your HTTP server, Apache/etc
+role :app, "192.168.2.129"                         # This may be the same as your `Web` server
+role :db,  "192.168.2.129", :primary => true # This is where Rails migrations will run
 
 
 default_run_options[:pty] =  true
@@ -19,17 +19,13 @@ set :scm, :git
 set :branch, "master"
 
 
-set :user, "ubuntu"            #if error use whats shown in podcast
+set :user, "ubuntu"            
 set :use_sudo, false
 set :admin_runner, "ubuntu"
 
-set :rails_env, 'production'     #<<<<<<<<<<    NEW
+set :rails_env, 'production'     
 #set :use_sudo, false   #if error delete this
 
-
-
-# if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
@@ -39,3 +35,5 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
+
+
