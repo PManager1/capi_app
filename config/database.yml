@@ -24,3 +24,5 @@ production:
   username: root
   password: pass$
   host: localhost
+  
+  
