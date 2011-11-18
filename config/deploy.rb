@@ -8,9 +8,9 @@ set :rvm_type, :user
 set :application, "capi_app"
 set :deploy_to, "/var/www/#{application}"
 
-role :web, "192.168.2.129"                          # Your HTTP server, Apache/etc
-role :app, "192.168.2.129"                         # This may be the same as your `Web` server
-role :db,  "192.168.2.129", :primary => true # This is where Rails migrations will run
+role :web, "50.18.155.154"                          # Your HTTP server, Apache/etc
+role :app, "50.18.155.154"                         # This may be the same as your `Web` server
+role :db,  "50.18.155.154", :primary => true # This is where Rails migrations will run
 
 
 default_run_options[:pty] =  true
