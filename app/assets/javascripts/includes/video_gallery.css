@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.video_gallery_container {
+	background-color: #000;
+	background-image: url(../images/filmstrip_tile.png);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+	padding-top: 25px;
+	padding-right: 0px;
+	padding-bottom: 25px;
+	padding-left: 115px;
+	border: 2px solid #444;
+}
+.clear_both {
+	clear: both;
+}
+a.videoLink {
+	background-color: #999;
+	display: block;
+	height: 115px;
+	width: 200px;
+	margin-top: 0px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+a.videoLink:hover {
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+}
