@@ -1,4 +1,6 @@
 CapiApp::Application.routes.draw do
+  get "bandpage/index"
+
   resources :posts
 
   # The priority is based upon order of creation:
@@ -50,7 +52,9 @@ CapiApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'posts#index'
+ #  root :to => 'posts#index'
+   root :to => 'bandpage#index'
+
 
   # See how all your routes lay out with "rake routes"
 
