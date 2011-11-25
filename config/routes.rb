@@ -1,6 +1,6 @@
 CapiApp::Application.routes.draw do
 
-  get "bandpage/index"
+  #get "bandpage/index"
   resources :posts
 
   # The priority is based upon order of creation:
